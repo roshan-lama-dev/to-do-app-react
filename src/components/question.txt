@@ -1,0 +1,15 @@
+Why am i getting empty string back
+what is difference between spreadin the tasklist
+What is the re rendering flow of the application. for the list to be displayed
+
+
+
+workflow for the application
+
+create the components and the ui
+get the input from the users by adding onchange event and onsubmit event
+capture the events and store them in a object first
+then add the object into the array
+display the array in the table
+
+to switch the task we need to create an random id for
