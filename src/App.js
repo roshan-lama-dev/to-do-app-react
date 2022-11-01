@@ -25,12 +25,24 @@ function App() {
     });
     setTaskList(tempArg);
   };
+
+  const handleOnSelect = (e) => {
+    console.log(e.target.value, e.target.checked);
+  };
   return (
     <div className="wrapper">
       <div className="container">
         <Title />
-        <InputField addTask={addTask} taskList={taskList} />
-        <DisplayField taskList={taskList} switchTask={switchTask} />
+        <InputField
+          addTask={addTask}
+          taskList={taskList}
+          handleOnSelect={handleOnSelect}
+        />
+        <DisplayField
+          taskList={taskList}
+          switchTask={switchTask}
+          handleOnSelect={handleOnSelect}
+        />
       </div>
     </div>
   );

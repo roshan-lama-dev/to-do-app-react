@@ -1,6 +1,6 @@
 import React from "react";
 
-export const ToDoList = ({ taskList, switchTask }) => {
+export const ToDoList = ({ taskList, switchTask, handleOnSelect }) => {
   console.log(taskList);
   return (
     <div className="">
@@ -18,7 +18,14 @@ export const ToDoList = ({ taskList, switchTask }) => {
             return (
               <>
                 <tr>
-                  <td> </td>
+                  <td>
+                    <input
+                      type="checkbox"
+                      className="form-check-input"
+                      value={item._id}
+                      onChange={handleOnSelect}
+                    />
+                  </td>
                   <td>{item.task}</td>
                   <td>{item.hour}</td>
                   <td>
